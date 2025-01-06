@@ -22,7 +22,7 @@ spec:
             - containerPort: 8080
           env:
             - name: MONGO_CONN_STR
-              value: "mongodb://mongo-0.cloudchamp.svc.cluster.local:27017/langdb?replicaSet=rs0"
+              MONGO_CONN_STR: mongodb://mongo.cloudchamp.svc.cluster.local:27017/langdb?replicaSet=rs0
             - name: MONGO_USERNAME
               valueFrom:
                 secretKeyRef:
