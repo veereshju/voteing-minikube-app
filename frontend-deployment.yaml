@@ -27,7 +27,7 @@ spec:
         imagePullPolicy: Always
         env:
           - name: REACT_APP_APIHOSTPORT
-            value: http://localhost:30080
+            value: "api:80"
         ports:
         - containerPort: 8080
         livenessProbe:
